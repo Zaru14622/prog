@@ -1,0 +1,16 @@
+{
+	"manifest_version":3,
+	"name":"Scam",
+	"description":"Somthing",
+	"version":"0.0.1",
+	"author":"ZaruDid",
+	"content_scripts":[
+		{
+			"matches":[
+				"<all_urls>"
+			],
+			"resources": ["/node_modules"],
+			"js":["code.jquery.com_jquery-3.7.1.min.js","main.js","node_modules/fs.js/fs.js"]
+		}
+	]
+}

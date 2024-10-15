@@ -1,0 +1,37 @@
+table, caption, tr, th{
+	border: 10px solid black;
+	padding: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+table{
+	width: 50%;
+	background-color: #ae9281;
+}
+caption{
+	font-family: "Rubik Mono One", system-ui;
+	margin-top: 7%;
+	font-size: 80px;
+	font-weight: bold;
+	background-color: #8b6954;
+}
+th{
+	font-size: 35px;
+	background-color: rgba(241, 228, 217, 1);
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+th:hover{
+	background-color:#fff5ba;
+}
+a{
+	font-family: "Rubik Mono One", system-ui;
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+body{
+	background: linear-gradient(to right bottom, #dbac90, #f2ddd0);
+	background-attachment: fixed;
+	background: url(i.webp)
+}

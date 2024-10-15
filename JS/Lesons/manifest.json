@@ -1,0 +1,15 @@
+{
+	"manifest_version":3,
+	"name":"Testing",
+	"description":"Somthing",
+	"version":"0.0.1",
+	"author":"ZaruDid",
+	"content_scripts":[
+		{
+			"matches":[
+				"https://osu.ppy.sh/beatmapsets*"
+			],
+			"js":["code.jquery.com_jquery-3.7.1.min.js","main.js"]
+		}
+	]
+}
