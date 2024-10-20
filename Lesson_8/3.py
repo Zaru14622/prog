@@ -26,7 +26,7 @@ def main():
         for j in range(0,9):
             if (3-i) < j and (5+i) > j and i < 5:
                 print(mas[i][j], end=" ")
-            elif  > j and i >= 5:
+            elif i >= 5 and (i - 4) <=j and (i- 4 +j)<=8:
                 print(mas[i][j], end=" ")
             else:
                 print(" ", end=" ")
