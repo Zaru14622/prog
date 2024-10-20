@@ -20,7 +20,7 @@ def Main(a,b):
     sum = 0
     for i in dop:
         sum += min(i)
-    print(sum)
+    print(f"Сумма минимальных чисел в каждом столбце : {sum}")
 
 
 Main(10,10)

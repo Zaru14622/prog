@@ -21,7 +21,7 @@ def Main(a,b):
                     c = mas[i][j]
                     mas[i][j] = mas[i][k]
                     mas[i][k] = c
-    print(i)
+    # print(i)
 
     for i in mas:
         print(i)
