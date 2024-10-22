@@ -1,0 +1,15 @@
+#circle {
+	width: 300px;
+	height: 300px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 25px;
+	left: 20%;
+}
+#Bord{
+	border: 3px solid gray;
+	position: relative;
+	width: 30%;
+	height: 350px;
+}
