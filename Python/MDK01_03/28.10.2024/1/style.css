@@ -1,0 +1,25 @@
+.Poisk{
+	height: 40px;
+	width: 200px;
+	position: absolute;
+	text-align: center;
+	border: 2px solid black;
+
+}
+.Poisk_img{
+	padding: 2px;
+	height: 38px;
+	position: absolute;
+	left: 206px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+.All_poisk{
+	position: absolute;
+	left: -215px;
+	transition: 0.3s;
+}
+.All_poisk:hover{
+	left: 0px;
+	transition: 0.3s;
+}
