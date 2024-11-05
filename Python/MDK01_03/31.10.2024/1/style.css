@@ -1,0 +1,20 @@
+.cube_b{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	float: left;
+	margin: 10px;
+}
+.cube_bl{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	float: left;
+	margin: 10px;
+}
+.cube_bl:hover{
+	background-color: orange;
+}
+.cube_b:hover{
+	background-color: orange;
+}
