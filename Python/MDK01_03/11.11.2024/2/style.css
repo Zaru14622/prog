@@ -1,0 +1,15 @@
+.di{
+	width: 100px;
+	height: 40px;
+	position: relative;
+	background-color: black;
+	float: left;
+	margin-right: 80px;
+}
+div:after{
+	content: "";
+	position: absolute;
+	border: 20px solid transparent; 
+	border-left: 20px solid black;
+	left: 100px;
+}	
