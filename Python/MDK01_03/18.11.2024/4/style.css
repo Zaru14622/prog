@@ -6,6 +6,12 @@
 	box-shadow: 5px 5px 5px #9A9996FF;
 	z-index: 1;
 }
+.Over{
+	width: 300px;
+	height: 700px;
+	overflow: hidden;
+	position: absolute;
+}
 .box{
 	width: 300px;
 	height: 70px;
