@@ -5,11 +5,23 @@
 	background-color: black;
 	float: left;
 	margin-right: 80px;
+	transition: 0.3s;
+}
+.di:hover{
+	background-color: #57E389FF;
 }
 div:after{
 	content: "";
 	position: absolute;
 	border: 20px solid transparent; 
 	border-left: 20px solid black;
+	left: 100px;
+	transition: 0.3s;
+}
+div:hover::after{
+	content: "";
+	position: absolute;
+	border: 20px solid transparent; 
+	border-left: 20px solid #57E389FF;
 	left: 100px;
 }

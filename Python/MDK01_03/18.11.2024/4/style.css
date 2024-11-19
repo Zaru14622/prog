@@ -1,0 +1,35 @@
+.Shapka{
+	width: 300px;
+	height: 70px;
+	background-color: #33D17AFF;
+	border: 2px solid #26A269FF;
+	box-shadow: 5px 5px 5px #9A9996FF;
+	z-index: 1;
+}
+.box{
+	width: 300px;
+	height: 70px;
+	background-color: #C0BFBCFF;
+	border: 2px solid #9A9996FF;
+	box-shadow: 5px 5px 5px #9A9996FF;
+	z-index: -1;
+}
+.Spisok{
+	position: absolute;
+	top: -1000px;
+	transition: 0.5s;
+	z-index: -1;
+}
+.Shapka:hover ~ .Spisok{
+	top: 82px;
+}
+.Spisok:hover{
+	top: 82px;
+}
+.main{
+	float: left;
+	margin-right: 15%;
+}
+div{
+	text-align: center;
+}

@@ -1,0 +1,20 @@
+table, td,th{
+	  border-collapse: collapse;
+	  border-top: 3px solid red;
+	  padding: 5px 20px 5px 2px;
+
+}
+tr:nth-child(2n+1){
+	background-color: yellow;
+}
+tr:nth-child(2n){
+	background-color: lightyellow;
+}
+table{
+	border-collapse: collapse;
+	 border: 3px solid red;
+}
+th{
+	background-color: red;
+	color: white;
+}
