@@ -14,7 +14,7 @@ m1 = set(m1)
 m2 = set(m2)
 print(m1)
 print(m2)
-print("*"*40)
+print("*"*200)
 print(m1 - m2)
 
 
