@@ -1,0 +1,109 @@
+.clock{
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	border: 10px solid black;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+}
+.nums{
+	font-size: 25px;
+}
+.n_12{
+	position: absolute;
+	left: 47%;
+	top:-40px;
+	animation-name: a_12;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+.n_3{
+	position: absolute;
+	top: 47%;
+	left: 105%;
+	animation-name: a_3;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+.n_6{
+	position: absolute;
+	top: 105%;
+	left: 48%;
+	animation-name: a_6;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+.n_9{
+	position: absolute;
+	top: 47%;
+	left: -45px;
+	animation-name: a_9;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+@keyframes str{
+	from{transform: rotate(0deg);}
+	25% { transform:rotate(90deg);}
+	50% {transform:rotate(180deg);}
+	75% {transform:rotate(270deg);}
+	to {transform: rotate(360deg);}
+} 
+@keyframes strel{
+	from{}
+	23%{background: #57E389FF}
+	24% {background: #F66151FF}
+	25% {background: #57E389FF}
+	49%{background: #57E389FF}
+	50% {background: #F66151FF}
+	51% {background: #57E389FF}
+	74%{background: #57E389FF}
+	75% {background: #F66151FF}
+	76% {background: #57E389FF}
+	99%{background: #57E389FF}
+	100% {background: #F66151FF}
+	76% {background: #57E389FF}
+}
+@keyframes a_12{
+	from{font-size: 40px; color: red;}
+	3%,97% {font-size: 25px; color: black;}
+	to {font-size: 40px; color: red;}
+}
+@keyframes a_3{
+	from,22%{font-size: 25px; color: black;}
+	25% {font-size: 40px; color: red;}
+	26%,to{font-size: 25px; color: black;}
+
+}
+@keyframes a_6{
+	from,47%{font-size: 25px; color: black;}
+	50% {font-size: 40px; color: red;}
+	51%,to{font-size: 25px; color: black;}
+
+}
+@keyframes a_9{
+	from,72%{font-size: 25px; color: black;}
+	75% {font-size: 40px; color: red;}
+	76%,to{font-size: 25px; color: black;}
+
+}
+.strelka{
+	position: absolute;
+	width: 10px;
+	height: 300px;
+	background: #57E389FF; 	
+	left: 47.5%;
+	animation-name: strel;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+.rot_center{
+	position: absolute;
+	left: 48%;
+	width: 10px;
+	height: 600px;
+	animation-name: str;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}

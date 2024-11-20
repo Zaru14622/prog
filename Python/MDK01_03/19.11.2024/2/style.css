@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ff4343;
+    border-radius: 50%;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.41,-0.47,0,1.49);
+}
+@keyframes fall {
+    from {top: 0; left: 0;height: 100px;background-color: #ff4343;}
+    14% {top: 88%;left: 10% ; height: 80px;width: 150px;background-color: #f60000;}
+    15% {top: 86%;left: 11%;height: 100px;background-color: #ff4343;} 
+    30% {top: 30%;left: 18%;height: 100px;width: 100px;background-color: #ff4343;} 
+    44% {top: 87%;left: 27%;height: 90px;width: 150px;background-color: #f60000;} 
+    45% {top: 85%;left: 28%;height: 100px;background-color: #ff4343;}
+    60% {top: 45%;left: 35%;height: 100px;width: 100px;background-color: #ff4343;} 
+    75% {top: 86%;left: 40%;height: 95px;width: 150px;background-color: #f60000;} 
+    90% {top: 56%;left: 50%;height: 100px;width: 100px;background-color: #ff4343;} 
+    100% {top: 86%;left: 60%;height: 100px;width: 150px;background-color: #ff4343;}
+
+}

@@ -1,0 +1,58 @@
+.sv {
+    width: 150px;
+    padding: 30px;
+    background-color: #5E5C64FF;
+    border-radius: 40px;
+
+}
+.svet1, .svet2, .svet3 {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation-iteration-count: infinite;
+    animation-duration: 4.5s;
+    
+}
+.svet1 {
+    animation-name: r;
+}
+.svet2 {
+    animation-name: y;
+}
+.svet3 {
+    animation-name: g;
+}
+
+@keyframes r {
+    from, to, 20% {
+        background-color: red;
+    }
+
+    50%, 75% {
+        background-color: #ccc;
+    }
+}
+@keyframes y {
+    from, to, 95% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: #ccc;
+    }
+    25%, 75%{
+        background-color: yellow;
+    }
+}
+@keyframes g {
+    from, to, 95% {
+        background-color: #ccc;
+    }
+    25%, 75% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: green;
+    }
+}

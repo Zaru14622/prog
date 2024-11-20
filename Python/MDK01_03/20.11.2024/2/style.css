@@ -1,0 +1,94 @@
+.ds{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+}
+.you{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+}
+.rkn{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	z-index: 2;
+}
+.digl{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	z-index: 1;
+}
+.bita{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	z-index: 3;
+	left: 130px;
+	top: -30px;
+	transform: rotate(-45deg);
+	animation-name: A_Bita;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: 0% 50%;
+}
+.All_rkn{
+	position: relative;
+	top: 500px;
+	animation-name: A_Rkn;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.All_ds{
+	position: relative;
+	left: 700px;
+	top: 500px;
+	animation-name: A_ds;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.All_you{
+	position: relative;
+	left: -1000px;
+	top: 500px;
+	animation-name: A_you;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+@keyframes A_Rkn{
+	from{position:absolute;left:-600px; }
+	5%{left:550px;top:500px;}
+	5.3%{top: 250px;}
+	5.4%{left: 700px}
+	5.5%{top:700;}
+	5.9%{top: 500px;}
+	6%{left: 1500px;transform: scaleX(1.0);}
+	6.1%{transform: scaleX(-1.0);}
+	6.2%{}
+	8%{}
+	to{transform: scaleX(-1.0);}
+
+}
+@keyframes A_Bita{
+	from{}
+	4%{transform: rotate(-45deg);}
+	5%{transform: rotate(6deg);}
+	to{}
+}
+@keyframes A_ds{
+	from,4.5%{transform: scaleY(1);top:500px}
+	4.9%{transform: scaleY(0.7); top: 550px;}
+	12%{transform: scaleY(1);top:500px}
+	to{}
+}
+@keyframes A_you{
+	from, 6%{left:-600px;}
+	10% {left:200px ;}
+	to{}
+}
