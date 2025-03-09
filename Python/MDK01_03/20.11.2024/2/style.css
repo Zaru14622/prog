@@ -1,8 +1,53 @@
+body{
+	background-image: url("office.jpeg");
+	background-size: cover;
+	background-position-y: -550px;
+}
+.bod{
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	z-index: -1;
+	width: 3000px;
+	height: 1050px;
+	top: -100px	;
+	left: -100px;
+	animation-name: A_Body;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
 .ds{
 	width: 200px;
 	height: 200px;
 	position: absolute;
 	z-index: 2;
+}
+#ogon_1{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	top: 57px;
+/*	left: 170px;*/
+	left: -1200px;
+	z-index: 5;
+	animation-name: A_Ogon_1;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#ogon_2{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+/*	left: 120px;*/
+	left: -1200px;
+	z-index: 5;
+	animation-name: A_Ogon_2;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
 }
 .you{
 	width: 200px;
@@ -15,12 +60,50 @@
 	height: 250px;
 	position: absolute;
 	z-index: 2;
+	animation-name: A_Rkn_rkn;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 .digl{
 	width: 150px;
 	height: 150px;
 	position: absolute;
 	z-index: 1;
+}
+.digl_1{
+	animation-name: Digl_1;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: 20px;
+	left: 50px;
+}
+.digl_2{
+	animation-name: Digl_2;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.pul{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	z-index: 0;
+	animation-name: A_Pul;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#pul_1{
+	position: absolute;
+	top: 100px;
+	left: 70px;
+}
+#pul_2{
+	position: absolute;
+	top: 100px;
+	left: 150px;
 }
 .bita{
 	width: 250px;
@@ -62,17 +145,18 @@
 	animation-iteration-count: infinite;
 }
 @keyframes A_Rkn{
-	from{position:absolute;left:-600px; }
+	from{position:absolute;left:-1000px; }
 	5%{left:550px;top:500px;}
 	5.3%{top: 250px;}
 	5.4%{left: 700px}
 	5.5%{top:700;}
 	5.9%{top: 500px;}
 	6%{left: 1500px;transform: scaleX(1.0);}
-	6.1%{transform: scaleX(-1.0);}
-	6.2%{}
-	8%{}
-	to{transform: scaleX(-1.0);}
+	6.2%{transform: scaleX(-1.0);}
+	15%{left:1500px}
+	23%{left:-1000px;}
+	24%{left:-1000px;}
+	to{transform: scaleX(-1.0);left:-2000px;}
 
 }
 @keyframes A_Bita{
@@ -85,10 +169,70 @@
 	from,4.5%{transform: scaleY(1);top:500px}
 	4.9%{transform: scaleY(0.7); top: 550px;}
 	12%{transform: scaleY(1);top:500px}
-	to{}
+	15%{transform: translateX(600px);}	
+	20%{transform: translateX(-1000px);}
+	22%{left:700px}
+	to{left: -2000px}
 }
 @keyframes A_you{
 	from, 6%{left:-600px;}
 	10% {left:200px ;}
-	to{}
+	15% {left:200px ;}
+	28% {left:-1000px ;}
+	to{left:-1000px ;}
 }
+
+
+@keyframes Digl_1{
+	from{}
+	10% {z-index: 1}
+	10.5% {z-index: 3;transform: rotate(0deg);}
+	11%{transform: rotate(180deg);}
+	12%{transform: rotate(360deg);}
+	12.4% {transform: rotate(300deg);}
+	13% {transform: rotate(360deg);}
+	14%{z-index: 3}
+	14.5%{z-index: 1}
+	to{transform: rotate(360deg);}
+}
+@keyframes Digl_2{
+	from{}
+	10% {z-index: 5}
+	9% {z-index: 1;transform: rotate(0deg);}
+	11%{}
+	12%{transform: rotate(0deg);}
+	12.4% {transform: rotate(-45deg);}
+	12.5% {transform: rotate(0deg);}
+	to{z-index: 5;}
+}
+@keyframes A_Pul{
+	from,12.3%{z-index: 0;}
+	12.4%{z-index: 6;}
+	to{z-index: 6}
+
+}
+@keyframes A_Ogon_1{
+	from{}
+	12.3%{left: -1000px}
+	12.4%{left:170px ;}
+	12.499999999%{left:-2000px ;}
+	to{left:-2000px ;}
+}
+@keyframes A_Ogon_2{
+	from{}
+	12.3%{left: -1000px}
+	12.4%{left:170px ;}
+	12.499999999%{left:-2000px ;}
+	to{left:-2000px ;}
+}
+@keyframes A_Rkn_rkn{
+	from, 12.9%{height: 250px;top: 0px}
+	13%{height: 100px;top: 70px}
+	to{height: 100px;}
+
+}
+@keyframes A_Body{
+	from, 20%{background: rgba(0, 0, 0, 0);}
+	25%,to{background: rgba(0, 0, 0, 1); z-index: 10;}
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<script>
+		function Red(col){	
+			t = document.getElementById("Table");
+			Update(t)
+			for(el of t.children[0].children){
+				el.children[col].style.backgroundColor = "#FF0000FF"
+			}
+		}
+		function Update(table){
+			for(el of table.children[0].children){
+				for(cell of el.children){
+					cell.style.backgroundColor = "#FFFFFFFF"
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<table id="Table">
+		<tr>
+			<td onclick="Red(0)"></td>
+			<td onclick="Red(1)"></td>
+			<td onclick="Red(2)"></td>
+			<td onclick="Red(3)"></td>
+			<td onclick="Red(4)"></td>
+		</tr>
+		<tr>
+			<td onclick="Red(0)"></td>
+			<td onclick="Red(1)"></td>
+			<td onclick="Red(2)"></td>
+			<td onclick="Red(3)"></td>
+			<td onclick="Red(4)"></td>
+		</tr>
+		<tr>
+			<td onclick="Red(0)"></td>
+			<td onclick="Red(1)"></td>
+			<td onclick="Red(2)"></td>
+			<td onclick="Red(3)"></td>
+			<td onclick="Red(4)"></td>
+		</tr>
+		<tr>
+			<td onclick="Red(0)"></td>
+			<td onclick="Red(1)"></td>
+			<td onclick="Red(2)"></td>
+			<td onclick="Red(3)"></td>
+			<td onclick="Red(4)"></td>
+		</tr>
+		<tr>
+			<td onclick="Red(0)"></td>
+			<td onclick="Red(1)"></td>
+			<td onclick="Red(2)"></td>
+			<td onclick="Red(3)"></td>
+			<td onclick="Red(4)"></td>
+		</tr>
+	</table>
+</body>
+</html>

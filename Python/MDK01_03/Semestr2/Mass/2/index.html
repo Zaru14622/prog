@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function f() {
+			str = ''
+			mass = []
+			for(i = 0;i < 10;i++){
+				n=[]
+				for(j = 0;j < 10;j++){
+					n[j] = Math.floor(Math.random()*10);
+				}
+				mass[i] = n
+			}
+			for(i = 0;i < 10;i++){
+				for(j = 0;j < 10;j++){
+					str = str + mass[i][j] + " "
+				}
+				str = str + "\n"
+			}
+			str =str + "\n\n"
+			for(i = 0;i < 5;i++){
+
+				save = mass[i]
+				mass[i] = mass[9-i]
+				mass[9-i] = save
+			}
+			for(i = 0;i < 10;i++){
+				for(j = 0;j < 10;j++){
+					str = str + mass[i][j] + " "
+				}
+				str = str + "\n"
+			}
+			alert(str)
+
+
+		}
+	</script>
+</head>
+<body onload="f()">
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+	background: url("https://cdn.culture.ru/images/8d4c6d93-c2dd-55ca-831d-4e6dad8ef321");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.test{
+	background-color:rgba(150, 123, 101, 0.86);
+	width: 85%;
+	border-radius: 10px;
+	transition-property: width, margin;
+	transition-duration: 0.7s;
+}
+legend{
+	font-family: "Rubik Mono One", system-ui;
+	font-size: 40px;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+label{
+	font-family: "Overpass", system-ui;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 15px;
+	transition-property: font-size;
+	transition-duration: 0.7s;
+}
+input{
+	margin-left: 20px;
+}
+label:hover{
+	font-size: 30px;
+}
+input, legend{
+	padding-left: 20px;
+}
+.test:hover{
+	width: 85%;
+	margin: 20px;
+}
+.back{
+	width: 3%;
+	border: 3px solid white;
+	background-color: white;
+	border-radius: 50%;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+
+}
+.back:hover{
+	background-color: #ffb2ba;
+}
+.res{
+	font-family: "Overpass", system-ui;
+	font-style: normal;
+	font-weight: bold;
+	width: 300px;
+	height: 100px;
+	font-size: 40px;
+	margin: 30px;
+	position: relative;
+	left: 80%;
+	border-radius: 15px;
+	border: 0px;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+.res:hover{
+	background-color: gray;
+}
+.TestTextInput{
+	margin-bottom: 15px;
+	height: 30px;
+	width: 250px;
+	border: 5px solid black;
+	border-radius: 10px;
+	font-size: 20px;
+}

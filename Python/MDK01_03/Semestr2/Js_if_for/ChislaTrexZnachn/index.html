@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function f()
+		{
+			res = ""
+			for(i=100; i < 1000; i++){
+				if(Math.sqrt(i)%1==0){
+					res = res+" "+String(i)
+				}
+			}
+			document.f1.inp.value = res
+		}
+	</script>
+</head>
+<body>
+	<form name="f1">
+		<input name="inp" type="text">
+		<input type="button" onClick="f()">
+	</form>
+</body>
+</html>

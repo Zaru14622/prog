@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<script>
+		function Red(row){	
+			t = document.getElementById("Table");
+			Update(t)
+			t.children[0].children[Number(row)].style.backgroundColor = "#FF0000FF";
+		}
+		function Update(table){
+			for(el of table.children[0].children){
+				el.style.backgroundColor = "#FFFFFFFF"
+			}
+		}
+	</script>
+</head>
+<body>
+	<table id="Table">
+		<tr onclick="Red(0)">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr onclick="Red(1)">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr onclick="Red(2)">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr onclick="Red(3)">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr onclick="Red(4)">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
